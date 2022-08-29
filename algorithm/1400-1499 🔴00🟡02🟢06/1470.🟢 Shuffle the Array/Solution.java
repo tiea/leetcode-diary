@@ -4,7 +4,7 @@ class Solution {
         int[] ans = new int[2 * n];
         for (int i = 0; i < n; i++) {
             ans[2 * i] = nums[i];
-            ans[2 * i + 1] = nums[2 * i];
+            ans[2 * i + 1] = nums[i + n];
         }
         return ans;
     }
