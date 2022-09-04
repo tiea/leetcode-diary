@@ -8,10 +8,10 @@ class Solution {
         int lowLen = (low + "").length();
         int highLen = (high + "").length();
         for (int i = lowLen; i <= highLen; i++) {
-            for (int j = 1; j < 9 - i; j--) {
+            for (int j = 1; j <= 9 - i + 1; j++) {
                 String s = "";
                 for (int pos = 0; pos < i; pos++) {
-                    s += ("" + j);
+                    s += (j + pos + "");
                 }
                 int num = Integer.valueOf(s);
                 if (num >= low && num <= high) {
